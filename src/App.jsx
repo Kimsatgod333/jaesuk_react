@@ -13,7 +13,8 @@ function App() {
       {/* 링크주소에 따라 컴포넌트 변경하는 위치는 전체를 브라우저 라우터로 묶고 시작 */}
       {/* 브라우저라우터 시작 */}
       <main>
-        <BrowserRouter>
+        {/* gitHub page로 리액트로 작업한 프로젝트를 배포할때는 gitHub저장소명이 gitHub 특징상 주소에 가장 먼저 표시되기 때문에 라우터 경로시작도 basename 속성을 이용해서 저장소명을 시작값으로 설정해야 한다. */}
+        <BrowserRouter basename="jaesuk_react">
           {/* 링크 */}
           <nav>
             <Link to="/" style={{color:'#000'}} >유재석</Link>
